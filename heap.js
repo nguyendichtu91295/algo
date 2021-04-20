@@ -77,7 +77,7 @@ class Heap {
                 return bubbleDown();
             }
 
-            return removedElement();
+            return removedElement;
         }
 
         return bubbleDown();

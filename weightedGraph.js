@@ -140,6 +140,8 @@ class Graph {
         //#region - variables
         const priorityQueue = new PriorityQueue()
         const result = {}
+        const visited = {}
+        const smallestDistance = {};
         //#endregion - variables
 
         //#region - load distance
@@ -156,23 +158,77 @@ class Graph {
                     value: Infinity
                 })
             }
+
+            result[key] = null; 
         })
 
         console.log(priorityQueue)
         //#endregion - load distance
 
         //#region - recursive helper
-        const helper = () => {
+        const helper = (start) => {
+            const key = start.key;
 
+            if (key == endpoint) {
+                return;
+            }
+
+            if (visited[key]) {
+                return;
+            }
+
+            const value = start.value;
+            visited[key] = true;
+            const children = this.adjacencyList[key];
+
+            children.forEach(each => {
+               
+                if (!visited[each.key]) {
+                    const current = value + each.value;
+                    priorityQueue.queue({
+                        key: each.key,
+                        value: current,
+                    });
+
+                    if (smallestDistance[each.key] == undefined || smallestDistance[each.key] > current) {
+                        smallestDistance[each.key] = current;
+                        result[each.key] = key;
+                    } 
+                }
+
+
+            });
+
+            return helper(priorityQueue.dequeue())
         }
 
-        helper();
-        return result;
+        helper(priorityQueue.dequeue());
+        
+        let current = endpoint;
+        const readableResult = [];
+        while (true) {
+            readableResult.push(current);
+            if (current == entry) {
+                break;
+            }
+            
+            current = result[current];
+            
+        }
+        
+        readableResult.reverse()
+        return readableResult;
         //#endregion - recursive helper
     }
 }
 
 class PriorityQueue {
+    /*
+        left item: 2n + 1
+        rigth item: 2n + 2
+
+        find parent: Floor((n - 1) / 2)
+    */ 
     // MIN HEAP
     constructor() {
         this.list = [];
@@ -193,7 +249,7 @@ class PriorityQueue {
             if (parent < 0) {
                 return this.list;
             }
-           
+
             if (this.list[position].value < this.list[parent].value) {
                 // swap
                 let temp = this.list[position];
@@ -201,7 +257,7 @@ class PriorityQueue {
                 this.list[parent] = temp;
                 position = parent;
                 return bubbleUp();
-            }
+            } 
 
             return this.list;
         }
@@ -244,7 +300,7 @@ class PriorityQueue {
                 return bubbleDown();
             }
 
-            return removedElement();
+            return removedElement;
         }
 
         return bubbleDown();
@@ -252,6 +308,17 @@ class PriorityQueue {
 }
 
 var graph = new Graph()
+
+// graph.addVertex("A");
+// graph.addVertex("B");
+// graph.addVertex("C");
+// graph.addVertex("D");
+// graph.addVertex("E");
+// graph.addEdge("A","B", 4)
+// graph.addEdge("A","C", 2)
+// graph.addEdge("C","D", 2)
+// graph.addEdge("B","E", 1)
+// graph.addEdge("D","E", 3)
 
 graph.addVertex("A");
 graph.addVertex("B");

@@ -5,8 +5,6 @@ class Node {
         this.right = null;
         this.val = val
     }
-
-    
 }
 
 class BinaryTree {

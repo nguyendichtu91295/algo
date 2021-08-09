@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 
-	"github.com/nguyendichtu91295/algo/internal/base"
 	"github.com/nguyendichtu91295/algo/internal/leetcode_go_medium"
 )
 
@@ -17,9 +16,9 @@ func main() {
 	// data := []int{-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4}
 	// data := []int{-2, -1, 0, 1, 2, 3}
 	// data := []int{-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4}
-	data := &base.ListNode{
-		Val: 1,
-	}
+	// data := &base.ListNode{
+	// 	Val: 1,
+	// }
 
 	// data.Next = &base.ListNode{
 	// 	Val: 2,
@@ -38,7 +37,7 @@ func main() {
 	// }
 
 	// result := leetcode_go_medium.Three_sum(data)
-	result := leetcode_go_medium.RemoveNthFromEnd(data, 1)
+	result := leetcode_go_medium.GenerateParenthesis(2)
 
 	fmt.Println("result: ", result)
 }

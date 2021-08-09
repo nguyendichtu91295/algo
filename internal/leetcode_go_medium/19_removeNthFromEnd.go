@@ -12,9 +12,17 @@ import (
  * }
  */
 func RemoveNthFromEnd(head *base.ListNode, n int) *base.ListNode {
-	list_ref_arr := []*base.ListNode{}
+	length := 0
+
 	for c := head; c != nil; c = c.Next {
-		list_ref_arr = append(list_ref_arr, c)
+		length += 1
+	}
+
+	list_ref_arr := make([]*base.ListNode, length)
+	current := head
+	for c := 0; c < length; c++ {
+		list_ref_arr[c] = current
+		current = current.Next
 	}
 
 	if n > len(list_ref_arr) || n == 0 {

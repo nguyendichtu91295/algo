@@ -1,0 +1,14 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "git@github.com:nguyendichtu91295/algo.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "start": "nodemon main.js"
+  }
+}

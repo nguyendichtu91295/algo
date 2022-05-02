@@ -74,3 +74,5 @@ var twoSumV2 = function (nums, target) {
 
     return [];
 };
+
+export {twoSum}

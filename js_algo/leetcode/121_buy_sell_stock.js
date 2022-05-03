@@ -4,65 +4,33 @@
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function(prices) {
-    let buyPrice = Infinity;
-    let currentProfit = 0;
-    let profit = 0;
-    
-    let buyDate = 0;
-    let sellDate = 0;
-    let buyIndex = 0;
-    let sellIndex = 0;
-    
-    while (buyIndex < prices.length) {
-        // find buyPrice
-        if (prices[buyIndex] < buyPrice) {
-            buyDate = buyIndex;
-            buyPrice = prices[buyIndex];
-            
-            // find sellPrice
-            sellIndex = buyIndex + 1;
-            
-            while(sellIndex < prices.length) {
-                if (prices[sellIndex] > buyPrice) {
-                    // test for current profit
-                    currentProfit = prices[sellIndex] - buyPrice;
-                    
-                    if (currentProfit > profit) {
-                        profit = currentProfit;
-                        sellDate = sellIndex;
-                    }
-                }
-                
-                sellIndex++;
-            }
-        }
-        
-        buyIndex++;
-    }
-    
-    return profit;
-};
 
-var maxProfitV2 = function(prices) {
-    let min = Infinity;
-    let max = 0;
-    let profit = 0;
-    
-    prices.forEach(item => {
-        if (item < min) {
-            min = item
-            max = 0;
-        } else if (item > max) {
-            max = item
-            
-            if (max - min > profit) {
-                profit = max - min;
-            }
+const maxProfit = (prices) => {
+    let buyingDate = 0
+    let optimalProfit = 0
+
+    prices.forEach((value, i) => {
+        if (value < prices[buyingDate]) {
+            buyingDate = i
+            return
+        }
+
+        const currentProfit = value - prices[buyingDate]
+
+        if (currentProfit > optimalProfit) {
+            optimalProfit = currentProfit
         }
     })
-    
-    return profit;
-};
 
-maxProfit([7,1,5,3,6,4]);
+    return optimalProfit
+}
+
+const run = () => {
+    // const result = maxProfit([7, 2, 6, 7, 8, 1, 6])
+    // const result = maxProfit([7,1,5,3,6,4])
+    const result = maxProfit([7,6,4,3,1])
+
+    console.log(result)
+}
+
+export default run

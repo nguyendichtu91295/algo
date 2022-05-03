@@ -31,6 +31,24 @@
     "jsx-a11y/control-has-associated-label": 0,
 	"consistent-return": "off",
 	"no-plusplus": "off",
-	"no-continue": "off"
+	"no-continue": "off",
+	"import/no-absolute-path": "off",
+	"no-console": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+
+          [
+            "/leetcode",
+            "./js_algo/leetcode"
+          ]
+        ],
+        "extensions": [
+          ".js"
+        ]
+      }
+    }
   }
 }

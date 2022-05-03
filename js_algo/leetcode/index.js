@@ -1,3 +1,3 @@
-import { twoSum } from '/leetcode/1_two_sum.js'
+import run from '/leetcode/1_two_sum.js'
 
-twoSum()
+run()

@@ -34,7 +34,8 @@
 	"no-continue": "off",
 	"import/no-absolute-path": "off",
 	"no-console": "off",
-	"no-unused-vars": "warn"
+	"no-unused-vars": "warn",
+	"arrow-body-style": "warn"
   },
   "settings": {
     "import/resolver": {

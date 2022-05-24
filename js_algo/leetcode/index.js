@@ -10,6 +10,10 @@
 // import run from '/leetcode/239_sliding_window_maximum'
 // import run from '/leetcode/242_validAnagram'
 // import run from '/leetcode/3_longest_substring_without_repeating_characters'
-import run from '/leetcode/424_longest_repeating_character_replacement'
+// import run from '/leetcode/424_longest_repeating_character_replacement'
+// import run from '/leetcode/438_find_all_anagrams_in_a_string'
+// import run from '/leetcode/76_minimum_window_substring'
+// import run from '/leetcode/49_group_anagrams'
+import run from '/leetcode/5_longest_palindromic_substring'
 
 run()

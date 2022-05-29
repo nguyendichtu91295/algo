@@ -41,7 +41,7 @@ class DoublyLinkedList {
             return;
         }
         const removedNode = this.tail;
-        
+
         if (this.length === 1) {
             this.clearList()
         } else {
@@ -49,7 +49,7 @@ class DoublyLinkedList {
             this.tail.next = null;
             this.length -= 1;
         }
-        
+
         return removedNode;
     }
 
@@ -186,7 +186,7 @@ class DoublyLinkedList {
         let leap = next.next;
 
         while(next !== null) {
-            
+
 
             current.prev = next;
             next.next = current;
@@ -204,10 +204,4 @@ class DoublyLinkedList {
     }
 }
 
-let list = new DoublyLinkedList();
-list.push(5)
-list.push(10)
-list.push(15)
-list.push(20)
 
-list.reverse();

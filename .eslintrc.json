@@ -35,7 +35,10 @@
 	"import/no-absolute-path": "off",
 	"no-console": "off",
 	"no-unused-vars": "warn",
-	"arrow-body-style": "warn"
+	"arrow-body-style": "warn",
+	"react/no-this-in-sfc": "warn",
+	"no-param-reassign": "warn",
+	"max-classes-per-file": "off"
   },
   "settings": {
     "import/resolver": {

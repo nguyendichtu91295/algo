@@ -14,6 +14,10 @@
 // import run from '/leetcode/438_find_all_anagrams_in_a_string'
 // import run from '/leetcode/76_minimum_window_substring'
 // import run from '/leetcode/49_group_anagrams'
-import run from '/leetcode/5_longest_palindromic_substring'
+// import run from '/leetcode/5_longest_palindromic_substring'
+// import run from '/leetcode/383_ransom_note'
+// import run from '/leetcode/380_insert_delete_getRandom_O'
+// import run from '/leetcode/41_first_missing_positive'
+import run from '/leetcode/146_LRU_cache'
 
 run()

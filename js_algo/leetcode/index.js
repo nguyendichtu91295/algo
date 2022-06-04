@@ -18,6 +18,12 @@
 // import run from '/leetcode/383_ransom_note'
 // import run from '/leetcode/380_insert_delete_getRandom_O'
 // import run from '/leetcode/41_first_missing_positive'
-import run from '/leetcode/146_LRU_cache'
+// import run from '/leetcode/146_LRU_cache'
+// import run from '/leetcode/432_all_o_one_data_structure'
+// import run from '/leetcode/22_generate_parentheses'
+// import run from '/leetcode/78_subsets'
+// import run from '/leetcode/17_letter_combinations_phone_number'
+// import run from '/leetcode/90_subsets_2'
+import run from '/leetcode/46_permutations'
 
 run()

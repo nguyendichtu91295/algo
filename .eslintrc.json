@@ -38,7 +38,8 @@
 	"arrow-body-style": "warn",
 	"react/no-this-in-sfc": "warn",
 	"no-param-reassign": "warn",
-	"max-classes-per-file": "off"
+	"max-classes-per-file": "off",
+	"no-return-assign": "off"
   },
   "settings": {
     "import/resolver": {

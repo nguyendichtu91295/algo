@@ -24,6 +24,7 @@
 // import run from '/leetcode/78_subsets'
 // import run from '/leetcode/17_letter_combinations_phone_number'
 // import run from '/leetcode/90_subsets_2'
-import run from '/leetcode/46_permutations'
+// import run from '/leetcode/46_permutations'
+import run from '/leetcode/37_sudoku_solver'
 
 run()

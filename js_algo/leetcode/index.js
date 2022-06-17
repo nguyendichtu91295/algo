@@ -25,6 +25,10 @@
 // import run from '/leetcode/17_letter_combinations_phone_number'
 // import run from '/leetcode/90_subsets_2'
 // import run from '/leetcode/46_permutations'
-import run from '/leetcode/37_sudoku_solver'
+// import run from '/leetcode/37_sudoku_solver'
+// import run from '/leetcode/74_searchMatrix'
+// import run from '/leetcode/215_findKthLargest'
+// import run from '/leetcode/153_findMin'
+import run from '/leetcode/4_findMedianSortedArrays'
 
 run()

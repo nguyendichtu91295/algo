@@ -1,5 +1,3 @@
-// https://leetcode.com/problems/ransom-note/
-
 const canConstruct = (ransomNote, magazine) => {
 
 };

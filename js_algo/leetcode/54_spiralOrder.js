@@ -3,65 +3,56 @@
 const spiralOrder = (matrix) => {
     const result = []
 
-    let l = 0
-    let r = matrix[0].length - 1
-    let t = 0
-    let b = matrix.length - 1
+    let left = 0
+    let right = matrix[0].length - 1
+    let top = 0
+    let bottom = matrix.length - 1
 
-    while (l <= r && t <= b) {
-        let i = t
-        let j = l
-
+    while (left <= right && top <= bottom) {
         // right
-        while (j <= r) {
-            result.push(matrix[i][j])
-            j++
+        for (let i = left; i <= right; i++) {
+            result.push(matrix[top][i])
         }
-        j -= 1
-        i += 1
+		top += 1
 
-        // down
-        while (i <= b) {
-            result.push(matrix[i][j])
-            i += 1
+        // bottom
+		for (let i = top; i <= bottom; i++) {
+            result.push(matrix[i][right])
         }
-        i -= 1
-        j -= 1
+		right -= 1
+
+		if (top > bottom || left > right) {
+			break
+		}
 
         // left
-        while (j >= l) {
-            result.push(matrix[i][j])
-            j -= 1
+		for (let i = right; i >= left; i--) {
+            result.push(matrix[bottom][i])
         }
-        j += 1
-        i -= 1
+		bottom -= 1
 
         // up
-        while (i > t) {
-            result.push(matrix[i][j])
-            i -= 1
+		for (let i = bottom; i >= top; i--) {
+            result.push(matrix[i][left])
         }
-
-        t += 1
-        b -= 1
-        l += 1
-        r -= 1
+		left += 1
     }
 
     return result
 }
 
 const run = () => {
-    // const result = spiralOrder([
-    //     [1, 2, 3],
-    //     [4, 5, 6],
-    //     [7, 8, 9]
-    // ])
     const result = spiralOrder([
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12]
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
     ])
+    // const result = spiralOrder([[3], [2]])
+    // const result = spiralOrder([
+    //     [1, 2, 3, 4],
+    //     [5, 6, 7, 8],
+    //     [9, 10, 11, 12]
+    // ])
 
     console.log(result)
 }

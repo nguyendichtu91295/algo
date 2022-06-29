@@ -1,10 +1,5 @@
 // https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-class ListNode {
-    constructor(val, next) {
-        this.val = val === undefined ? 0 : val
-        this.next = next === undefined ? null : next
-    }
-}
+import ListNode from '/utils/singleLinkedList'
 
 const removeNthFromEnd = (head, n) => {
 	const dummy = new ListNode()

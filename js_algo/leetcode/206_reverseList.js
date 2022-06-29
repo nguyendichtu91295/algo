@@ -1,23 +1,6 @@
 // https://leetcode.com/problems/reverse-linked-list/
+import ListNode from '/utils/singleLinkedList'
 
-/**
- * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
- */
-class ListNode {
-    constructor(val, next) {
-        this.val = val === undefined ? 0 : val
-        this.next = next === undefined ? null : next
-    }
-}
-
-/**
- * @param {ListNode} head
- * @return {ListNode}
- */
 const reverseList = (head) => {
 	let prev = null
 	let current = head

@@ -40,6 +40,13 @@
 // import run from '/leetcode/141_hasCycle'
 // import run from '/leetcode/21_mergeTwoLists'
 // import run from '/leetcode/19_removeNthFromEnd'
-import run from '/leetcode/143_reorderList'
+// import run from '/leetcode/143_reorderList'
+// import run from '/leetcode/225_myStack'
+// import run from '/leetcode/232_myQueue'
+// import run from '/leetcode/622_myCircularQueue'
+// import run from '/leetcode/20_isValid'
+// import run from '/leetcode/150_evalRPN'
+// import run from '/leetcode/155_minStack'
+import run from '/leetcode/735_asteroidCollision'
 
 run()

@@ -1,10 +1,5 @@
 // https://leetcode.com/problems/merge-two-sorted-lists/
-class ListNode {
-    constructor(val, next) {
-        this.val = val === undefined ? 0 : val
-        this.next = next === undefined ? null : next
-    }
-}
+import ListNode from '/utils/singleLinkedList'
 
 const mergeTwoLists = (list1, list2) => {
     const dummy = new ListNode()

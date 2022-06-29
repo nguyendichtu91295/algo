@@ -45,11 +45,14 @@
     "import/resolver": {
       "alias": {
         "map": [
-
-          [
-            "/leetcode",
-            "./js_algo/leetcode"
-          ]
+			[
+				"/leetcode",
+				"./js_algo/leetcode"
+			],
+			[
+				"/utils",
+				"./js_algo/utils"
+			]
         ],
         "extensions": [
           ".js"

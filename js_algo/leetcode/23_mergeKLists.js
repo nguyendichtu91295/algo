@@ -1,11 +1,5 @@
 // https://leetcode.com/problems/merge-k-sorted-lists/
-
-class ListNode {
-    constructor(val, next) {
-        this.val = val === undefined ? 0 : val
-        this.next = next === undefined ? null : next
-    }
-}
+import ListNode from '/utils/singleLinkedList'
 
 const mergeKLists = (lists) => {
     if (lists.length === 0) {

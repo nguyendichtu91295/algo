@@ -47,6 +47,8 @@
 // import run from '/leetcode/20_isValid'
 // import run from '/leetcode/150_evalRPN'
 // import run from '/leetcode/155_minStack'
-import run from '/leetcode/735_asteroidCollision'
+// import run from '/leetcode/735_asteroidCollision'
+// import run from '/leetcode/224_calculate'
+import run from '/leetcode/227_calculate'
 
 run()

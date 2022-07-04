@@ -49,6 +49,9 @@
 // import run from '/leetcode/155_minStack'
 // import run from '/leetcode/735_asteroidCollision'
 // import run from '/leetcode/224_calculate'
-import run from '/leetcode/227_calculate'
+// import run from '/leetcode/227_calculate'
+// import run from '/leetcode/739_dailyTemperatures'
+// import run from '/leetcode/42_trap'
+import run from '/leetcode/84_largestRectangleArea'
 
 run()

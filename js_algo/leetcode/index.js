@@ -52,6 +52,10 @@
 // import run from '/leetcode/227_calculate'
 // import run from '/leetcode/739_dailyTemperatures'
 // import run from '/leetcode/42_trap'
-import run from '/leetcode/84_largestRectangleArea'
+// import run from '/leetcode/84_largestRectangleArea'
+// import run from '/leetcode/104_maxDepth'
+// import run from '/leetcode/226_invertTree'
+// import run from '/leetcode/235_lowestCommonAncestor'
+import run from '/leetcode/100_isSameTree'
 
 run()

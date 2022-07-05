@@ -56,6 +56,10 @@
 // import run from '/leetcode/104_maxDepth'
 // import run from '/leetcode/226_invertTree'
 // import run from '/leetcode/235_lowestCommonAncestor'
-import run from '/leetcode/100_isSameTree'
+// import run from '/leetcode/100_isSameTree'
+// import run from '/leetcode/102_levelOrder'
+// import run from '/leetcode/236_lowestCommonAncestor'
+// import run from '/leetcode/199_rightSideView'
+import run from '/leetcode/572_isSubtree'
 
 run()

@@ -60,6 +60,10 @@
 // import run from '/leetcode/102_levelOrder'
 // import run from '/leetcode/236_lowestCommonAncestor'
 // import run from '/leetcode/199_rightSideView'
-import run from '/leetcode/572_isSubtree'
+// import run from '/leetcode/572_isSubtree'
+// import run from '/leetcode/98_isValidBST'
+// import run from '/leetcode/230_kthSmallest'
+// import run from '/leetcode/124_maxPathSum'
+import run from '/leetcode/297_deserialize_serialize'
 
 run()

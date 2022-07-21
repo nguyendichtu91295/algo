@@ -64,6 +64,13 @@
 // import run from '/leetcode/98_isValidBST'
 // import run from '/leetcode/230_kthSmallest'
 // import run from '/leetcode/124_maxPathSum'
-import run from '/leetcode/297_deserialize_serialize'
+// import run from '/leetcode/297_deserialize_serialize'
+// import run from '/leetcode/733_floodFill'
+// import run from '/leetcode/200_numIslands'
+// import run from '/leetcode/542_updateMatrix'
+// import run from '/leetcode/994_orangesRotting'
+// import run from '/leetcode/133_cloneGraph'
+// import run from '/leetcode/417_pacificAtlantic'
+import run from '/leetcode/207_canFinish'
 
 run()

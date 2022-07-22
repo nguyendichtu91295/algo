@@ -104,3 +104,9 @@ dist
 .tern-port
 
 yarn.lock
+
+# Python
+bin/
+include/
+lib/
+

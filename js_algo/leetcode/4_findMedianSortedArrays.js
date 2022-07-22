@@ -1,6 +1,7 @@
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 const findMedianSortedArrays = (nums1, nums2) => {
+    // #  [2,5,7,10] [1,3,4,6,7,8]
     let A = nums1
     let B = nums2
 
@@ -9,8 +10,8 @@ const findMedianSortedArrays = (nums1, nums2) => {
         B = nums1
     }
 
-    const total = nums1.length + nums2.length
-    const half = Math.floor(total / 2)
+    const total = nums1.length + nums2.length // 10
+    const half = Math.floor(total / 2) // 5
 
     let l = 0
     let r = A.length - 1
@@ -48,7 +49,9 @@ const findMedianSortedArrays = (nums1, nums2) => {
 }
 
 const run = () => {
-    const result = findMedianSortedArrays([1, 2], [3, 4])
+    // const result = findMedianSortedArrays([2, 5, 7, 10], [1, 3, 4, 6, 7, 8])
+    // const result = findMedianSortedArrays([1, 2], [3, 4])
+    const result = findMedianSortedArrays([1, 3], [2])
     // const result = findMedianSortedArrays(
     //     [1, 2, 3, 4, 5, 6, 7, 8],
     //     [1, 2, 3, 4]

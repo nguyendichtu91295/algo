@@ -1,9 +1,9 @@
-const canConstruct = (ransomNote, magazine) => {
+//
 
-};
+const example = (something) => {}
 
 const run = () => {
-    const result = canConstruct('a', 'b')
+    const result = example('somethin')
 
     console.log(result)
 }

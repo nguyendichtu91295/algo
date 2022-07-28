@@ -4,6 +4,7 @@
 # from python_algo.leetcode._295_medianFinder import run
 # from python_algo.leetcode._208_trie import run
 # from python_algo.leetcode._211_wordDictionary import run
-from python_algo.leetcode._139_wordBreak import run
+# from python_algo.leetcode._139_wordBreak import run
+from python_algo.leetcode._212_findWords import run
 
 print(run())

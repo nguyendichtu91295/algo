@@ -72,6 +72,11 @@
 // import run from '/leetcode/994_orangesRotting'
 // import run from '/leetcode/133_cloneGraph'
 // import run from '/leetcode/417_pacificAtlantic'
-import run from '/leetcode/207_canFinish'
+// import run from '/leetcode/207_canFinish'
+// import run from '/leetcode/322_coinChange'
+// import run from '/leetcode/56_merge'
+// import run from '/leetcode/981_timeMap'
+// import run from '/leetcode/721_accountsMerge'
+import run from '/leetcode/75_sortColors'
 
 run()

@@ -72,6 +72,7 @@
 // import run from '/leetcode/994_orangesRotting'
 // import run from '/leetcode/133_cloneGraph'
 // import run from '/leetcode/417_pacificAtlantic'
-import run from '/leetcode/207_canFinish'
+// import run from '/leetcode/207_canFinish'
+import run from '/leetcode/57_insert'
 
 run()

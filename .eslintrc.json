@@ -40,7 +40,8 @@
 	"no-param-reassign": "warn",
 	"max-classes-per-file": "off",
 	"no-return-assign": "off",
-	"no-loop-func": "off"
+	"no-loop-func": "off",
+    "prefer-destructuring": "off"
   },
   "settings": {
     "import/resolver": {

@@ -48,7 +48,7 @@
 // import run from '/leetcode/150_evalRPN'
 // import run from '/leetcode/155_minStack'
 // import run from '/leetcode/735_asteroidCollision'
-// import run from '/leetcode/224_calculate'
+import run from '/leetcode/224_calculate'
 // import run from '/leetcode/227_calculate'
 // import run from '/leetcode/739_dailyTemperatures'
 // import run from '/leetcode/42_trap'
@@ -78,6 +78,10 @@
 // import run from '/leetcode/56_merge'
 // import run from '/leetcode/981_timeMap'
 // import run from '/leetcode/721_accountsMerge'
-import run from '/leetcode/75_sortColors'
+// import run from '/leetcode/75_sortColors'
+// import run from '/leetcode/416_canPartition'
+// import run from '/leetcode/8_myAtoi'
+// import run from '/leetcode/62_uniquePaths'
+// import run from '/leetcode/310_findMinHeightTrees'
 
 run()

@@ -41,7 +41,8 @@
 	"max-classes-per-file": "off",
 	"no-return-assign": "off",
 	"no-loop-func": "off",
-    "prefer-destructuring": "off"
+    "prefer-destructuring": "off",
+    "no-restricted-syntax": "off"
   },
   "settings": {
     "import/resolver": {

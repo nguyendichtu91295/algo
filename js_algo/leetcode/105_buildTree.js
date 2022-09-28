@@ -3,43 +3,46 @@
 import TreeNode from '/utils/treeNode'
 
 const buildTree = (preorder, inorder) => {
-    const hashObj = {}
-    let start = 0
+    const obj = {}
 
-    inorder.forEach((item, index) => {
-        hashObj[item] = index
-    })
+    for (let i = 0; i < inorder.length; i++) {
+        const ele = inorder[i]
 
-    const helper = (inorderStart = 0, inorderEnd = preorder.length) => {
-        if (inorderEnd - inorderStart === 1) {
-            return new TreeNode(inorder[inorderStart])
+        obj[ele] = i
+    }
+
+    let i = 0
+    const helper = (start, end) => {
+        if (end === start) {
+            return new TreeNode(inorder[start])
         }
 
-        const rootValue = preorder[start]
-        const root = new TreeNode(rootValue)
+        const root = new TreeNode(preorder[i])
 
-        if (rootValue !== inorder[inorderStart]) {
-            start += 1
-            root.left = helper(inorderStart, hashObj[rootValue])
+        if (start <= obj[root.val] - 1) {
+            i += 1
+            root.left = helper(start, obj[root.val] - 1)
         }
 
-		if (hashObj[rootValue] + 1 < inorderEnd) {
-			start += 1
-			root.right = helper(hashObj[rootValue] + 1, inorderEnd)
-		}
+        if (obj[root.val] + 1 <= end) {
+            i += 1
+            root.right = helper(obj[root.val] + 1, end)
+        }
 
         return root
     }
 
-    return helper()
+    return helper(0, inorder.length - 1)
 }
 
 const run = () => {
     // const result = buildTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
+    // const result = buildTree([1, 2, 4, 5, 3, 6, 7], [4, 2, 5, 1, 6, 3, 7])
+    const result = buildTree([1, 2, 3], [1, 2, 3])
     // const result = buildTree([3, 2, 1, 4], [1, 2, 3, 4])
     // const result = buildTree([1, 2], [2, 1])
     // const result = buildTree([1, 2], [1, 2])
-    const result = buildTree([1, 2, 3], [2, 3, 1])
+    // const result = buildTree([1, 2, 3], [2, 3, 1])
     // const result = buildTree(
     //     [6, 2, 0, 4, 3, 5, 8, 7, 9],
     //     [0, 2, 3, 4, 5, 6, 7, 8, 9]
